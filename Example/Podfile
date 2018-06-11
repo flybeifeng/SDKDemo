@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'SDKDemo_Example' do
+  pod 'SDKDemo', :path => '../'
+
+  target 'SDKDemo_Tests' do
+    inherit! :search_paths
+
+    pod 'FBSnapshotTestCase'
+  end
+end
